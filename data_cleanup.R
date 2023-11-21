@@ -22,6 +22,8 @@ s_sum <- filter(s_sum, YEAR <= 2017)
 s_sum <- filter(s_sum, AGE != "All ages")
 
 df <- merge(x = s_sum, y = d_sum, by.x  = "YEAR", by.y = "Year", all = TRUE)
+#export df
+write.csv(df, "Clean dataframe.csv")
 #PLEASE READ - The data repeats for the ages until it moves onto a new year.
 #This is for the last three columns on the df.
 #This is the best i can merge it to. If you can clean it up even more great!
