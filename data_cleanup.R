@@ -29,10 +29,17 @@ write.csv(df, "Clean dataframe.csv")
 #This is the best i can merge it to. If you can clean it up even more great!
 
 # Data Cleaning & Augmentation
-#Must create at least one new categorical variable
-#Must create at least one new continuous/numerical variable
 #Must create at least one summarization data frame 
   #Note - your summarization table does not need to be exported to a csv file, you just need to have code that create this data frame. 
+
+#Create a new categorical variable
+
+df$Deaths_Category <- ifelse(df$Deaths > median(df$Deaths, na.rm = TRUE), "High", "Low")
+
+#Create a new continuous/numerical variable
+
+df$Deaths_to_Suicide_Ratio <- round(df$Deaths / df$ESTIMATE, 2)
+
 
 
 
