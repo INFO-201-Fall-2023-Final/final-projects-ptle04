@@ -34,5 +34,5 @@ write.csv(df, "Clean dataframe.csv")
 #Must create at least one summarization data frame 
   #Note - your summarization table does not need to be exported to a csv file, you just need to have code that create this data frame. 
 
-# Data Documentation - Nutrition label
+
 
