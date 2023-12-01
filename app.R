@@ -20,13 +20,17 @@ about_page <- fluidPage(
   
 ) 
 
-analysis_page <- fluidPage(
+analysis_page1 <- fluidPage(
+  h1("Analysis", align = "center"),
+)
+analysis_page2 <- fluidPage(
   h1("Analysis", align = "center"),
 )
 
 ui <-  navbarPage(
   "Suicide Death Rate in the United States",
-  tabPanel("Analysis", analysis_page),
+  tabPanel("National death vs Suicide", analysis_page1),
+  tabPanel("Suicide over the years", analysis_page2),
   tabPanel("About", about_page),
 ) 
 
