@@ -11,7 +11,7 @@ library(dplyr)
 
 # Sample data (replace this with your actual data)
 data <- data.frame(
-  TypeOfDeath = c("Accident", "Homicide", "Suicide", "Other"),
+  TypeOfDeath = c("Car accident", "Homicide", "Suicide", "Disease", "Natural Cause" "Other"),
   Percentage = c(10, 20, 50, 20)
 )
 
