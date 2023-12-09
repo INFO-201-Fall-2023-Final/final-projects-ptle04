@@ -1,4 +1,3 @@
-
 # Load required libraries
 library(ggplot2)
 library(dplyr)
@@ -12,7 +11,7 @@ bub_df <- filter(bub_df, UNIT_NUM == 1)
 # Create a bubble chart using ggplot2
 bubble <- ggplot(data = bub_df, aes(x = YEAR, y = ESTIMATE, size = ESTIMATE, color = ESTIMATE))+ 
   geom_point() +
-  labs(title = "Total Number of Suicides Each Year (2007-2017)",
+  labs(
        x = "Year",
        y = "Number of Suicides (per 100,000 resident population)") +
   scale_size_continuous(range = c(3, 10)) +
